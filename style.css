@@ -1,0 +1,244 @@
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+    width: 100%;
+}
+body{
+    display: grid;
+    place-items: center;
+    font-family: 'Lobster Two', cursive;
+    background-image: url("/2men.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    width: 100%;
+    background-color: #fdce0f;
+    /* line-height: 4rem; */
+}
+.navbar-toggler{
+    border-color: black;
+}
+#burger{
+    position: fixed;
+    top: 0;
+    right: 5%;
+    width: 5%;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    color: black;
+}
+.navbar-brand{
+    font-size: 2rem;
+    color: #273c75;
+}
+.nav-link{
+    font-size: 1.7rem;
+    color: #130f40;
+}
+.main-body3{
+    margin-top: 20rem;
+    padding: 1rem;
+    border: #273c75 solid 2px;
+    display: grid;
+    place-items: center;
+    width: 35%;
+    background-image: url("/donate1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #130f40;
+}
+input[type=text], input[type=number],input[type=email]{
+    border: #273c75 solid 2px;
+}
+textarea{
+    border: #273c75 solid 2px;
+}
+.about{
+    display: grid;
+    place-items: center;
+    margin-top:10%;
+    width: 40%;
+}
+.about h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    margin: 1rem;
+    font-weight: 900;
+    color: #e1b12c;
+}
+.about p{
+    font-size: 2rem;
+    color: rgb(218, 162, 162);
+}
+.btns{
+     margin: 4rem;
+     margin-top: 10rem;
+}
+
+.btn{
+    max-width: 23rem;
+    margin: 4rem;
+    border-radius: 50rem;
+    padding: 2.5rem;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#btn1{
+    color: #f5b400;
+    border:1px solid #f5b400;
+}
+
+#btn1 a{
+    color: #e1b12c;
+    text-decoration: none;
+}
+
+#btn2 a{
+    color: cornsilk;
+    text-decoration: none;
+}
+
+#btn2{
+    color: cornsilk;
+    border:1px solid cornsilk;
+}
+
+#btn1:hover{
+    background-color: cornsilk;
+}
+
+#btn2:hover{
+    background-color: #e1b12c;
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10rem;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* figure{
+    margin-left: 20%;
+    margin-top: 15%;
+    width: 30rem;
+} */
+
+.container2 p{
+    color: #e3e9fa;
+    font-size: 2.5rem;
+    margin: 10rem;
+}
+
+.container2 a{
+    margin-left: 20%;
+}
+
+.carousel{
+    margin: 10rem;   
+}
+
+.carousel-item img{
+    width: 30rem;
+    height: 40rem;
+}
+
+.carousel-indicators{
+    width: 20%;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+}
+
+.icon img{
+    margin-left: 90%;
+    margin-bottom: 5%;
+    border-radius: 50%;
+    box-shadow: -0.2rem -0.4rem 1rem #dcdde1, 0.2rem 0.4rem 1.2rem #f5f6fa;
+    animation: move 1s linear infinite;
+    position: absolute;
+    transition: 200ms;
+}
+
+.icon img:hover {
+    box-shadow: -0.2rem -0.4rem 2rem #ED4C67, 0.2rem 0.4rem 2.2rem #B53471;
+}
+
+.container4{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transition: (-50%,-50%);
+}
+
+.icons img{
+    border-radius: 50%;
+    margin: 2rem;
+    cursor: pointer;
+    box-shadow: -0.2rem -0.4rem 2rem #ED4C67, 0.2rem 0.4rem 2.2rem #B53471;
+    animation: move 1s linear infinite;
+    position: relative;
+    transition: 200ms;
+}
+
+.icons img:hover{
+    box-shadow: -0.2rem -0.4rem 3rem #273c75, 0.2rem 0.4rem 3.2rem #192a56;
+}
+
+.container4 a img{
+    filter: drop-shadow(-0.2rem -0.4rem 1.5rem #273c75);
+    animation: move 2s linear infinite;
+    position: relative;
+    transition: 200ms;
+}
+@keyframes move{
+    0%, 100% {
+        bottom : 0;
+    }
+    50% {
+        bottom : 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {  
+body{
+    background-size: cover;
+}
+
+.container2{
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.carousel-inner, #carouselExampleCaptions{
+    width: 30rem;
+}
+.container2 p{
+    width: 30rem;
+}
+
+.main-body3{
+    width: 70%;
+    height: 80%;
+}
+
+}
