@@ -47,7 +47,7 @@ body{
     display: grid;
     place-items: center;
     width: 35%;
-    background-image: url("/donate1.jpg");
+    background-image: url("./donate1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
